@@ -2,8 +2,8 @@
   "siteMetadata": {
     "language": "en",
     "siteUrl": "https://gatsby-starter-portfolio-minimal-theme.netlify.app/",
-    "title": "Gatsby Starter for Portfolio Minimal",
-    "titleTemplate": "%s · Portfolio Minimal",
+    "title": "Pos.",
+    "titleTemplate": "Pos.",
     "description": "A Gatsby Starter Project to easily get started with Portfolio Minimal theme.",
     "author": "Konstantin Münster",
     "avatar": "../content/images/gatsby.png",
@@ -17,22 +17,24 @@
     }
   },
   "siteConfiguration": {
-    "logo": { "text": "Portfolio" },
+    "logo": { "text": "Pos." },
     "navigation": {
       "header": [
-        { "label": "About", "url": "/#about" },
-        { "label": "Blog", "url": "/blog" },
-        { "label": "Features", "url": "/#features" },
-        { "label": "Github", "url": "/#github" }
+        { "label": "Pricing", "url": "/#pricing" },
+        { "label": "Features", "url": "/features" },
+        { "label": "FAQ", "url": "/#faq" },
+        { "label": "Reviews", "url": "/#reviews" }
       ],
       "ctaButton": {
         "openNewTab": true,
-        "label": "Resume",
-        "url": "/resume.pdf"
+        "label": "Login",
+        "url": "/login"
       },
       "footer": [
-        { "label": "Privacy", "url": "/privacy" },
-        { "label": "Imprint", "url": "/imprint" }
+        { "label": "Home", "url": "/home" },
+        { "label": "Terms", "url": "/terms" },
+        { "label": "About", "url": "/about" },
+        { "label": "FAQ", "url": "/faq" }
       ]
     },
     "featureToggles": {
