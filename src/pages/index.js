@@ -1,26 +1,23 @@
 import React from "react";
 import {
-  AboutSection,
-  ArticlesSection,
-  ContactSection,
-  HeroSection,
-  InterestsSection,
+  // ContactSection,
   Page,
   ProjectsSection,
   Seo,
 } from "gatsby-theme-portfolio-minimal";
+import Pricing from '../components/pricing'
+import Hero from '../components/hero';
 
 export default function IndexPage() {
   return (
     <>
-      <Seo title="Gatsby Starter for Portfolio Minimal" />
+      <Seo title="Pos." />
       <Page useSplashScreenAnimation>
-        <HeroSection sectionId="hero" />
-        <ArticlesSection sectionId="articles" heading="Latest Articles" sources={['Medium']} />
-        <AboutSection sectionId="about" heading="About Portfolio Minimal" />
-        <InterestsSection sectionId="details" heading="Details" />
+      <Hero/>
+        <Pricing />
         <ProjectsSection sectionId="features" heading="Built-in Features" />
-        <ContactSection sectionId="github" heading="Issues?" />
+        {/* <ContactSection sectionId="github" heading="Issues?" /> */}
+
       </Page>
     </>
   );

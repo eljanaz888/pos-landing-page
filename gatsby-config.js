@@ -1,6 +1,26 @@
 module.exports = {
   plugins: [
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `content`,
+        path: `${__dirname}/src/contents`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `content`,
+        path: `${__dirname}/src/images`,
+      },
+    },
+
+    `gatsby-transformer-remark`,
+    `gatsby-transformer-sharp`,
+    'gatsby-plugin-sharp',
+    'gatsby-plugin-image',
+
+    {
       resolve: "gatsby-theme-portfolio-minimal",
       options: {
         siteUrl: "https://gatsby-starter-portfolio-minimal-theme.netlify.app/", // Used for sitemap generation

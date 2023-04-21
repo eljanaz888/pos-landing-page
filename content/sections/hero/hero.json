@@ -1,20 +1,15 @@
 {
-  "intro": "Hej",
-  "heroPhoto": {
-    "src": "../../images/lego-dummy.png",
-    "alt": "My Photo"
-  },
   "image": {
-    "src": "",
+    "src": "../../images/pos-pic.jpeg",
     "alt": "Waving Hand Emoji"
   },
-  "title": "I'm a Gatsby Starter",
+  "title": "Pos Software Platform",
   "subtitle": {
-    "prefix": "I do all the setup ",
+    "prefix": "I do all the updates ",
     "highlight": "for you",
     "suffix": "."
   },
-  "description": "A Gatsby Starter Project to easily get started with Portfolio Minimal theme.",
+  "description": "A Software platform with cool features",
   "socialProfiles": {
     "from": ["LinkedIn", "Medium", "Github", "Mail"],
     "showIcons": false

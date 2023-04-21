@@ -13,7 +13,7 @@ body[data-theme='lightTheme'] {
     --code-block-bg: #f5f6f9;  
     --code-block-var: #da0078;
     --code-block-num: #bf04b7;
-    --code-block-fun: #3d5afe;
+    --code-block-fun: #3d5afe; 
     --code-block-keyword: #fe4001;
     --code-block-comment: #7f7f7f;
     --code-block-tkimp: #fd971f;

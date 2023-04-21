@@ -1,0 +1,86 @@
+.btn{
+    width: auto;
+    height: auto;
+    border-radius: var(--border-radius);
+    border: 0.125rem solid var(--primary-color);
+    background: var(--background-color);
+    padding: 0.5rem 1.5rem;
+    transition: 20ms ease-out;
+    color: black;
+    margin-top: 30px;
+    font-size: 22px;
+}
+.btn:hover{
+    background-color: black;
+    color: var(--background-color);
+}
+
+.hero-wrapper{
+    display: flex;
+    width: 100%;
+    max-width: var(--page-width);
+    margin: 0 auto 8rem auto;
+    padding: var(--page-padding);
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-wrapper h1{
+    font-size: 45px;
+    line-height: 45px;
+}
+.hero-wrapper p{
+    font-size: 32px;
+    line-height: 32px;
+}
+
+.first-wrapper {
+    flex-basis: 40%;
+}
+
+.first-wrapper u {
+    text-decoration: none;
+    box-shadow: inset 0 -0.5em 0 var(--secondary-color);
+    transition: box-shadow 0.3s ease-out 0s;
+}
+
+.first-wrapper u:hover {
+    box-shadow: inset 0 -1em 0 var(--secondary-color);
+}
+
+.image-wrapper {
+    flex-basis: 70%;
+}
+
+.image-wrapper img {
+    border-radius: 15px;
+}
+
+@media (max-width: 991px) {
+    .hero-wrapper {
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+
+@media (max-width: 425px) {
+    .hero-wrapper {
+        margin: 0 auto 4rem auto;
+    }
+
+    .hero-wrapper h1{
+        font-size: 28px;
+        line-height: 28px;
+    }
+
+    .hero-wrapper p{
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .btn {
+        font-size: 15px;
+        padding: 0.3rem 1rem;
+    }
+}
