@@ -59,6 +59,24 @@ a:focus {
     outline-width: 2px;
 }
 
+.btn {
+    width: auto;
+    height: auto;
+    border-radius: var(--border-radius);
+    border: 0.125rem solid var(--primary-color);
+    background: var(--background-color);
+    padding: 0.5rem 2rem;
+    transition: 20ms ease-out;
+    color: black;
+    margin-top: 30px;
+    font-size: 22px;
+}
+
+.btn:hover {
+    background-color: black;
+    color: var(--background-color);
+}
+
 h1 {
     font-weight: 700;
     font-size: 45px;

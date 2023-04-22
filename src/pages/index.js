@@ -7,6 +7,7 @@ import {
 } from "gatsby-theme-portfolio-minimal";
 import Pricing from '../components/pricing'
 import Hero from '../components/hero';
+import Review from '../components/review';
 
 export default function IndexPage() {
   return (
@@ -16,6 +17,7 @@ export default function IndexPage() {
       <Hero/>
         <Pricing />
         <ProjectsSection sectionId="features" heading="Built-in Features" />
+        <Review/>
         {/* <ContactSection sectionId="github" heading="Issues?" /> */}
 
       </Page>

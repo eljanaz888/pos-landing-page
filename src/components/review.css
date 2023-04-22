@@ -1,0 +1,20 @@
+.review {
+    width: 100%;
+    max-width: var(--page-width);
+    margin: 0 auto 8rem auto;
+    padding: var(--page-padding);
+}
+
+.reviews-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.review-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex-basis: 20%;
+}

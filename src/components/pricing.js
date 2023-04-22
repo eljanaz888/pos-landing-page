@@ -1,6 +1,8 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
-import '../components/pricing.css'
+import '../components/pricing.css';
+import { TiTickOutline } from 'react-icons/ti';
+
 
 const Pricing = () => {
   const data = useStaticQuery(graphql`
@@ -37,10 +39,13 @@ const Pricing = () => {
           return (
             <div className="cards-wrapper" key={index}>
               <div className="pricing-card" id={item.frontmatter.id}>
-                <h3>{item.frontmatter.header}</h3>
+                <h3 className='header'>{item.frontmatter.header}</h3>
                 <h3 className="price">{item.frontmatter.pricing}</h3>
-                <p>{item.frontmatter.whats_included}</p>
-                <p>{item.frontmatter.list}</p>
+                <p className='included'>{item.frontmatter.whats_included}</p>
+                <p><span><TiTickOutline className='tick-icon' /></span>{item.frontmatter.list}</p>
+                <button className='btn' type='button'>
+                        Get Started
+                      </button>
               </div>
             </div>
           );
