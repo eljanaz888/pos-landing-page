@@ -33,13 +33,13 @@ const Review = () => {
 
   return(
     <section className="review" id="review">
-        <h2>What our people say</h2>
+        <h3>What our people say</h3>
     <div className="reviews-wrapper">
       {sortedNodes.map((item, index) => {
         return (
           <div className="review-wrapper" key={index}>
             <div className="review-card" id={item.frontmatter.id}>
-              <span>{item.frontmatter.stars}</span>
+              <span className='star'>{item.frontmatter.stars}</span>
               <p className='opinion'>{item.frontmatter.description}</p>
               <div className='opinion-wrapper'>
                 <StaticImage/>
