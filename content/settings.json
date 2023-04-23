@@ -21,7 +21,7 @@
     "navigation": {
       "header": [
         { "label": "Pricing", "url": "/#pricing" },
-        { "label": "Features", "url": "/features" },
+        { "label": "Features", "url": "/#features" },
         { "label": "FAQ", "url": "/#faq" },
         { "label": "Reviews", "url": "/#reviews" }
       ],

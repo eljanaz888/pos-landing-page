@@ -32,8 +32,8 @@ const Review = () => {
   );
 
   return(
-    <section className="review" id="review">
-        <h3>What our people say</h3>
+    <section className="review" id="reviews">
+        <h1>What our people say</h1>
     <div className="reviews-wrapper">
       {sortedNodes.map((item, index) => {
         return (
@@ -42,7 +42,9 @@ const Review = () => {
               <span className='star'>{item.frontmatter.stars}</span>
               <p className='opinion'>{item.frontmatter.description}</p>
               <div className='opinion-wrapper'>
-                <StaticImage/>
+                <StaticImage className='review-photo'
+                            src='../images/review-photo.jpg'
+                            alt='hello'/>
                 <h2>{item.frontmatter.name}</h2>
               </div>
             </div>

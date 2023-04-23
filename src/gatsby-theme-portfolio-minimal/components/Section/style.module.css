@@ -7,7 +7,7 @@
 
 .Section .Heading {
     margin: 0 0 2rem 0;
-    font-size: 38px;
+    font-size: 45px;
     line-height: 2.25rem;
     text-align: center;
 }
@@ -16,6 +16,18 @@
     width: 100%;
     height: 100%;
     max-width: var(--page-width);
-    margin: 0 auto 8rem auto;
+    margin: auto;
     padding: var(--page-padding);
+}
+@media (max-width: 991px) {
+    .Section .Heading{
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width: 425px) {
+    .Section .Heading {
+        margin: 0 0 2rem 0;
+        font-size: 28px;
+    }
 }
