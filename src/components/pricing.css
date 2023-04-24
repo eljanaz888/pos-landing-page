@@ -36,7 +36,7 @@
 }
 
 .pricing-card:hover {
-   box-shadow: 4px 4px 10px #9b73eab8;
+   box-shadow: 4px 4px 10px black;
    transform: scale(1.1);
 }
 
@@ -80,4 +80,9 @@
     .pricing {
         margin: 0 0 4rem 0;
     }
+    .pricing-card:hover {
+        box-shadow: 4px 4px 10px #fff;
+        transform: scale(0.5);
+     }
 }
+
