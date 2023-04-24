@@ -11,12 +11,12 @@
 }
 
 .hero-wrapper h1{
-    font-size: 45px;
-    line-height: 45px;
+    font-size: 40px;
+    line-height: 40px;
 }
 .hero-wrapper p{
-    font-size: 32px;
-    line-height: 32px;
+    font-size: 30px;
+    line-height: 30px;
 }
 
 .first-wrapper {
@@ -34,7 +34,7 @@
 }
 
 .image-wrapper {
-    flex-basis: 70%;
+    flex-basis: 80%;
 }
 
 .image-wrapper img {

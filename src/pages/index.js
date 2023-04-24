@@ -8,6 +8,7 @@ import {
 import Pricing from '../components/pricing'
 import Hero from '../components/hero';
 import Review from '../components/review';
+import TawkToWidget from '../components/TawkToWidget';
 
 export default function IndexPage() {
   return (
@@ -19,7 +20,7 @@ export default function IndexPage() {
         <ProjectsSection sectionId="features" heading="Built-in Features" />
         <Review/>
         {/* <ContactSection sectionId="github" heading="Issues?" /> */}
-
+        <TawkToWidget tawkId="644403d74247f20fefed28f8/1gukqu0l3" /> 
       </Page>
     </>
   );

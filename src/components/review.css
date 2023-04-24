@@ -16,7 +16,7 @@
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
-    flex-basis: 20%;
+    justify-content: space-between;
 }
 
 .review-card {
@@ -26,13 +26,14 @@
     background-color: white;
     color: black;
     text-align: center;
-    min-width: 400px;
+    min-width: 300px;
     display: flex;
     flex-direction: column;
     min-height: 300px;
     align-items: center;
     justify-content: space-evenly;
 }
+
 .review h1 {
     text-align: center;
     margin-bottom: 100px;

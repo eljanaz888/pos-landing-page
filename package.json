@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "gatsby": "^5.0.1",
+    "gatsby-plugin-tawk.to": "^1.0.8",
     "gatsby-theme-portfolio-minimal": "latest",
     "gatsby-transformer-inline-svg": "^1.2.0",
     "gatsby-transformer-remark": "^6.9.0",

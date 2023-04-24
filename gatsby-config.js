@@ -13,7 +13,14 @@ module.exports = {
         name: `content`,
         path: `${__dirname}/src/images`,
       },
+      resolve: `gatsby-plugin-tawk.to`,
+      options: {
+        tawkId: "1gukqu0l3",
+        tawkKey: "https://tawk.to/chat/644403d74247f20fefed28f8/1gukqu0l3",
+        // get this from the tawk script widget
+      },
     },
+    
 
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
