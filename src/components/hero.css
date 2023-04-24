@@ -20,7 +20,7 @@
 }
 
 .first-wrapper {
-    flex-basis: 40%;
+    flex-basis: 45%;
 }
 
 .first-wrapper u {
@@ -34,7 +34,7 @@
 }
 
 .image-wrapper {
-    flex-basis: 80%;
+    flex-basis: 65%;
 }
 
 .image-wrapper img {
