@@ -52,5 +52,42 @@ module.exports = {
         // }
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/locales`,
+        name: `locale`
+      }
+    },
+    {
+      resolve: `gatsby-plugin-react-i18next`,
+      options: {
+        localeJsonSourceName: `locale`, // name given to `gatsby-source-filesystem` plugin.
+        languages: [`sq`, `en`], // Albanian as default language and English as alternative
+        defaultLanguage: `sq`,
+        siteUrl: `https://example.com`,
+        // if you are using trailingSlash gatsby config include it here, as well (the default is 'always')
+        trailingSlash: 'always',
+        // you can pass any i18next options
+        i18nextOptions: {
+          interpolation: {
+            escapeValue: false // not needed for react as it escapes by default
+          },
+          keySeparator: false,
+          nsSeparator: false
+        },
+        pages: [
+          {
+            matchPath: '/:lang?/blog/:uid',
+            getLanguageFromPath: true,
+            excludeLanguages: ['en']
+          },
+          {
+            matchPath: '/preview',
+            languages: ['en']
+          }
+        ]
+      }
+    }
   ],
 };
