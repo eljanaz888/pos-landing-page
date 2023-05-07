@@ -4,25 +4,14 @@ import Pricing from '../components/pricing'
 import Hero from '../components/hero';
 import Review from '../components/review';
 import TawkToWidget from '../components/TawkToWidget';
-import { Link, useI18next } from 'gatsby-plugin-react-i18next';
 import { graphql } from "gatsby";
 
 export default function IndexPage() {
-  const { languages, originalPath } = useI18next();
 
   return (
     <>
       <Seo title="Pos." />
       <Page useSplashScreenAnimation>
-        <ul className="languages">
-          {languages.map((lng) => (
-            <li key={lng}>
-              <Link to={originalPath} language={lng}>
-                {lng}
-              </Link>
-            </li>
-          ))}
-        </ul>
         <Hero/>
         <Pricing />
         <ProjectsSection sectionId="features" heading="Built-in Features" />

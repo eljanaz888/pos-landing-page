@@ -10,7 +10,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `content`,
+        name: `images`,
         path: `${__dirname}/src/images`,
       },
       // resolve: `gatsby-plugin-tawk.to`,
