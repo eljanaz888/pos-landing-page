@@ -1,83 +1,75 @@
-import React, { useState } from "react";
+import React from "react";
 import { Page, Seo } from "gatsby-theme-portfolio-minimal";
 import { graphql } from "gatsby";
-import { Trans } from 'gatsby-plugin-react-i18next';
-import Scrollspy from 'react-scrollspy';
-import '../styles/terms.css';
+import { Trans } from "gatsby-plugin-react-i18next";
+import Scrollspy from "react-scrollspy";
+import "../styles/terms.css";
 
-const Sidebar = ({ edges, activeSectionIndex, onSectionClick }) => {
+const Sidebar = ({ edges }) => {
   return (
-    <nav>
-      <ul>
+    <nav className="sidebar-links">
+      <Scrollspy
+        items={edges.map((edge) =>
+          edge.node.frontmatter.terms.replace(/\s+/g, "-")
+        )}
+        currentClassName="active"
+      >
         {edges.map((edge, index) => {
           const { frontmatter } = edge.node;
-          const isActive = activeSectionIndex === index;
           return (
-            <li key={frontmatter.terms}>
+            <li key={index}>
               <a
-                href={`#${frontmatter.terms}`}
-                onClick={(event) => {
-                  event.preventDefault();
-                  onSectionClick(index);
-                }}
-                className={isActive ? 'active' : ''}
+                href={`#${frontmatter.terms.replace(/\s+/g, "-")}`}
               >
                 <Trans>{frontmatter.terms}</Trans>
               </a>
             </li>
-          )
+          );
         })}
-      </ul>
+      </Scrollspy>
     </nav>
-  )
+  );
 };
 
 const Terms = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
-  const [activeSectionIndex, setActiveSectionIndex] = useState(0);
 
   return (
     <>
       <Seo title="Terms" />
       <Page useSplashScreenAnimation>
-        <section className='terms-wrapper'>
-            <Sidebar
-          edges={edges}
-          activeSectionIndex={activeSectionIndex}
-          onSectionClick={(index) => {
-            setActiveSectionIndex(index);
-          }}
+        <section className="terms-wrapper">
+          <Sidebar
+            edges={edges}
           />
-          <Scrollspy 
-            items={edges.map((edge) => edge.node.frontmatter.terms)}
-            currentClassName='is-current'
-            offset={-100}
-            onUpdate={(spy) => {
-              const index = edges.findIndex((edge) => edge.node.frontmatter.terms === spy);
-              setActiveSectionIndex(index);
-            }}
-          >
+          <div className="terms-list">
             {edges.map((edge) => {
               const { frontmatter } = edge.node;
               return (
-                <React.Fragment key={frontmatter.terms}>
-                  <h2 id={frontmatter.terms}><Trans>{frontmatter.terms}</Trans></h2>
-                  <p><Trans>{frontmatter.paragraph}</Trans></p>
-                </React.Fragment>
-              )
+                <>
+                  <section id={frontmatter.terms.replace(/\s+/g, "-")}>
+                    <h2>
+                      <Trans>{frontmatter.terms}</Trans>
+                    </h2>
+                    <p>
+                      <Trans>{frontmatter.paragraph}</Trans>
+                    </p>
+                  </section>
+                </>
+              );
             })}
-          </Scrollspy>
+          </div>
         </section>
       </Page>
     </>
-  )
+  );
 };
 
 export default Terms;
 
 export const query = graphql`
   query languagesAndMyQuery($language: String!) {
-    locales: allLocale(filter: {language: {eq: $language}}) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
       edges {
         node {
           ns
@@ -86,7 +78,7 @@ export const query = graphql`
         }
       }
     }
-    allMarkdownRemark(filter: {frontmatter: {paragraph: {regex: ""}}}) {
+    allMarkdownRemark(filter: { frontmatter: { paragraph: { regex: "" } } }) {
       edges {
         node {
           frontmatter {
