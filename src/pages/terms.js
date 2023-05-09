@@ -39,15 +39,15 @@ const Terms = ({ data }) => {
   return (
     <>
       <Seo title="Terms" />
-      <Sidebar
-        edges={edges}
-        activeSectionIndex={activeSectionIndex}
-        onSectionClick={(index) => {
-          setActiveSectionIndex(index);
-        }}
-      />
       <Page useSplashScreenAnimation>
         <section className='terms-wrapper'>
+            <Sidebar
+          edges={edges}
+          activeSectionIndex={activeSectionIndex}
+          onSectionClick={(index) => {
+            setActiveSectionIndex(index);
+          }}
+          />
           <Scrollspy 
             items={edges.map((edge) => edge.node.frontmatter.terms)}
             currentClassName='is-current'
@@ -76,7 +76,16 @@ const Terms = ({ data }) => {
 export default Terms;
 
 export const query = graphql`
-  query MyQuery($language: String!) {
+  query languagesAndMyQuery($language: String!) {
+    locales: allLocale(filter: {language: {eq: $language}}) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
     allMarkdownRemark(filter: {frontmatter: {paragraph: {regex: ""}}}) {
       edges {
         node {
@@ -84,15 +93,6 @@ export const query = graphql`
             terms
             paragraph
           }
-        }
-      }
-    }
-    locales: allLocale(filter: {language: {eq: $language}}) {
-      edges {
-        node {
-          ns
-          data
-          language
         }
       }
     }

@@ -1,11 +1,13 @@
 .terms-wrapper{
     display: flex;
     width: 100%;
-    max-width: var(--page-width);
+    max-width: 90rem;
     margin: 0 auto 8rem auto;
     padding: var(--page-padding);
     margin-top: 50px;
     justify-content: center;
-    align-items: center;
 }
 
+.terms-wrapper nav {
+    width: 50%;
+}
