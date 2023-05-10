@@ -8,6 +8,7 @@ import "../styles/terms.css";
 const Sidebar = ({ edges }) => {
   return (
     <nav className="sidebar-links">
+      <h3 className="sidebar-heading">Contents</h3>
       <Scrollspy
         items={edges.map((edge) =>
           edge.node.frontmatter.terms.replace(/\s+/g, "-")
@@ -38,6 +39,7 @@ const Terms = ({ data }) => {
     <>
       <Seo title="Terms" />
       <Page useSplashScreenAnimation>
+      <h1 className="terms-header">Terms & Conditions</h1>
         <section className="terms-wrapper">
           <Sidebar
             edges={edges}

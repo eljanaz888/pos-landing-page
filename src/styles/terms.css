@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 .terms-wrapper {
   display: flex;
   width: 100%;
@@ -6,9 +7,45 @@
   padding: var(--page-padding);
   flex-wrap: wrap;
 }
+.sidebar-heading {
+ 
+  line-height: 32px;
+  color: var(--primary-color);
+  margin: 1rem 28px;
+  padding: 10px;
+}
+.terms-header {
+  line-height: 40px;
+  color: var(--primary-color);
+  margin: 1rem 32px;
+  padding: 10px;
+  text-align: center;
+  letter-spacing: 1px;
+ 
+}
+.terms-list {
+    padding: 1.5rem;
+    background: white;
+    border-radius: 6px;
+}
+.terms-list p {
+  font-family: 'Inconsolata', monospace;
+}
+.terms-list h2 {
+  font-family: 'Inconsolata', monospace;
+}
 
 .active {
-  background-color: blue;
+  border-radius: 5px;
+  font-weight: bolder;
+}
+.sidebar-links a { 
+  color: black;
+  padding: 3px;
+}
+.sidebar-links ul {
+  list-style: none;
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {

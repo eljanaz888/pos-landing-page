@@ -9,7 +9,7 @@ body[data-theme='lightTheme'] {
     --scroll-bar-color: rgba(0, 0, 0, 0.5);
     --box-shadow-color: rgba(0, 0, 0, 0.16);
     --box-shadow-hover-color: rgba(0, 0, 0, 0.32);
-    --base-font: 'Roboto', Arial, sans-serif;
+    --base-font: 'Roboto', Arial, sans-serif, 'Inconsolata', monospace;
     --code-block-bg: #f5f6f9;  
     --code-block-var: #da0078;
     --code-block-num: #bf04b7;
