@@ -20,7 +20,7 @@
 }
 
 .first-wrapper {
-    flex-basis: 45%;
+    flex-basis: 50%;
 }
 
 .first-wrapper u {
@@ -34,12 +34,9 @@
 }
 
 .image-wrapper {
-    flex-basis: 65%;
+    flex-basis: 85%;
 }
 
-.image-wrapper img {
-    border-radius: 15px;
-}
 
 @media (max-width: 991px) {
     .hero-wrapper {
