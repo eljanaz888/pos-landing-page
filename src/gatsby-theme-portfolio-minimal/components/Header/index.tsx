@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { useTranslation } from 'gatsby-plugin-react-i18next';
+import { Trans } from 'gatsby-plugin-react-i18next';
 
 import { Logo } from 'gatsby-theme-portfolio-minimal/src/components/Logo';
 import { Link } from 'gatsby-theme-portfolio-minimal/src/components/Link';
@@ -15,7 +15,6 @@ export function Header(): React.ReactElement {
   const [open, setOpen] = React.useState<boolean>(false);
   const siteConfiguration = useSiteConfiguration();
   const isDesktopBreakpoint = useMediaQuery('(min-width: 992px)');
-  const { t } = useTranslation();
 
   const navigationItems = (
     <>
@@ -27,7 +26,7 @@ export function Header(): React.ReactElement {
             className={classes.NavLink}
             onClick={!isDesktopBreakpoint ? () => setOpen(!open) : undefined}
           >
-            {linkObject.label}
+            <Trans>{linkObject.label}</Trans>
           </Link>
         );
       })}
@@ -38,7 +37,7 @@ export function Header(): React.ReactElement {
           className={classes.CtaButton}
           onClick={!isDesktopBreakpoint ? () => setOpen(!open) : undefined}
         >
-          {siteConfiguration.navigation.ctaButton.label}
+          <Trans>{siteConfiguration.navigation.ctaButton.label}</Trans>
         </Link>
       ) : null}
       <LanguageSwitcher />

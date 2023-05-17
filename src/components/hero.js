@@ -16,7 +16,7 @@ const Hero = () => {
       <div className='image-wrapper'>
       <StaticImage
           className="main-image"
-          src='../images/pos-main.jpeg'
+          src='../images/pos-main.png'
           alt='mainimage'
         />
       </div>
