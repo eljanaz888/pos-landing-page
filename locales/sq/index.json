@@ -1,10 +1,14 @@
 {
-    "Pos Software Platform": "Platforme POS",
-    "I do all the updates for you": "Sherbime POS",
+    "Pos.al: Simplify Your Point of Sale": "Platforma POS",
+    "Simplify Sales. Enhance Service.": "Thjeshtoni shitjet. Përmirëso Shërbimin.",
     "Introduction": "Hyrje",
-    "Welcome to our Point of Sale (POS) website. These terms and conditions (hereafter Terms) apply to all users of the website and its services. By accessing or using our website, you agree to be bound by these Terms. If you do not agree with these Terms, you may not use the website.": "Mirë se vini në faqen tonë të shitjes me anë të kartelesë (POS). Këto kushte dhe kushtetuta (të quajtura këtu si 'Kushtet') aplikohen për të gjithë përdoruesit e faqes tonë dhe shërbimeve të saj. Duke hyrë ose duke përdorur faqen tonë, ju pajtoheni me këto Kushte. Nëse nuk pajtoheni me këto Kushte, nuk mund të përdorni faqen tonë.",
-    "Pricing": "Cmimet",
-    "Features": "Risite",
-    "Reviews": "Pershtypjet",
+    "Start your plan" : "Shiko planet",
+    "Welcome to our Point of Sale (POS) website. These terms and conditions (hereafter Terms) apply to all users of the website and its services. By accessing or using our website, you agree to be bound by these Terms. If you do not agree with these Terms, you may not use the website.": "Mirësevini në faqen tonë të shitjes (POS). Këto kushte (të quajtura këtu si 'Kushtet') aplikohen për të gjithë përdoruesit e faqes tonë dhe shërbimeve. Duke hyrë ose duke përdorur faqen tonë, ju pajtoheni me këto Kushte. Nëse nuk pajtoheni me këto Kushte, nuk mund të përdorni faqen tonë.",
+    "Terms & Conditions" : "Termat & Kushtet",
+    "Use of Website": "Përdorimi i faqes",
+    "You are granted permission to use our website and services for lawful purposes only. You may not use the website in any way that breaches any applicable local, national or international law or regulation." : "Juve ju jepet e drejta për të përdorur faqen tonë dhe shërbimet e saj vetëm për qëllime të ligjshme. Ju nuk mund ta përdorni faqen e tonë në asnjë mënyrë që shkel çdo ligj ose rregullore të zbatueshme vendore, kombëtare ose ndërkombëtare.",
+    "Pricing": "Çmimet",
+    "Features": "Risitë",
+    "Reviews": "Vlerësimet",
     "Login": "Hyr"
 }

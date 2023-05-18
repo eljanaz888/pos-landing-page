@@ -2,14 +2,13 @@
   "projects": [
     {
       "visible": true,
-      "category": "🕹️ EASY AND QUICK SETUP",
-      "title": "Add content and deploy!",
-      "description": "Get up and running within minutes. Just install the starter, add your content, deploy it, and there you go! This starter works seamlessly with hosts like Netlify. Photo by Clément H on Unsplash.",
-      "tags": ["Content Integration", "Ready-2-Deploy"],
+      "category": "🧰 Easy Product Management",
+      "title": "Pos.al simplifies the management of products",
+      "description": "With Pos.al businesses can swiftly navigate through their catalog, search for items, and apply filters to quickly find specific products, ensuring a smooth and efficient sales process.",
+      "tags": ["Intuitive catalog", "Efficient inventory"],
       "image": {
-        "src": "../../images/clement-h-95YRwf6CNw8-unsplash.png",
-        "alt": "Quick Setup",
-        "linkTo": "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme"
+        "src": "../../images/features-tablet.jpg",
+        "linkTo": ""
       },
       "links": [
         {
@@ -24,25 +23,50 @@
     },
     {
       "visible": true,
-      "category": "🧰 EXTENDABLE LAYOUT",
-      "title": "Add more sections!",
-      "description": "The starter includes predefined sections as well as a template for new, custom sections. Moreover, you can add new projects to this section without additional coding. Photo by Kelly Sikkema on Unsplash.",
-      "tags": ["Custom Sections", "Easy-2-Use"],
+      "category": "🧰 Flexible Payment Options",
+      "title": "Pos.al offers flexible payment options",
+      "description": "With Pos.al you can generate customizable receipts and invoices, providing businesses with a professional and organized approach to financial transactions.",
+      "tags": ["Multiple payment methods", "Secure transactions"],
       "image": {
-        "src": "../../images/kelly-sikkema-Hl3LUdyKRic-unsplash.png",
+        "src": "../../images/features-mobile.jpg",
         "alt": "Extendable Layout"
       },
       "links": [
         {
           "type": "github",
           "url": "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme"
+        },
+        {
+          "type": "external",
+          "url": "https://www.gatsbyjs.org/docs/mdx/writing-pages/"
+        }
+      ]
+    },
+    {
+      "visible": true,
+      "category": "🧰 Customer Support and Helpdesk",
+      "title": "Pos.al offers integrated customer support and helpdesk features",
+      "description": "The platform includes ticketing systems, live chat support, and a knowledge base to address common questions or concerns. With a dedicated customer support and helpdesk feature, you can improve customer satisfaction, build trust, and maintain strong relationships.",
+      "tags": ["Customer support", "Helpdesk integration"],
+      "image": {
+        "src": "../../images/charles-deluvio-DgoyKNgPiFQ-unsplash.jpg",
+        "linkTo": "https://posal.tawk.help/"
+      },
+      "links": [
+        {
+          "type": "github",
+          "url": "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme"
+        },
+        {
+          "type": "external",
+          "url": "https://posal.tawk.help/"
         }
       ]
     }
   ],
   "button": {
-    "visible": false,
-    "label": "Visit on Github",
+    "visible": true,
+    "label": "Follow us",
     "url": "https://github.com/konstantinmuenster/gatsby-theme-portfolio-minimal"
   }
 }

@@ -39,7 +39,7 @@ const Terms = ({ data }) => {
     <>
       <Seo title="Terms" />
       <Page useSplashScreenAnimation>
-      <h1 className="terms-header">Terms & Conditions</h1>
+      <h1 className="terms-header"><Trans>Terms & Conditions</Trans></h1>
         <section className="terms-wrapper">
           <Sidebar
             edges={edges}
@@ -80,7 +80,10 @@ export const query = graphql`
         }
       }
     }
-    allMarkdownRemark(filter: { frontmatter: { paragraph: { regex: "" } } }) {
+    allMarkdownRemark(
+      filter: {frontmatter: {paragraph: {regex: ""}}}
+      sort: { frontmatter: {id: ASC}}
+    ) {
       edges {
         node {
           frontmatter {

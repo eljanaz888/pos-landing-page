@@ -8,10 +8,10 @@ const Hero = () => {
   return (
     <section className='hero-wrapper'>
       <div className='first-wrapper'>
-        <h1>{t('Pos Software Platform')}</h1>
+        <h1>{t('Pos.al: Simplify Your Point of Sale')}</h1>
         <p><u>
-        <Trans>I do all the updates for you</Trans></u></p>
-        <Link className='btn' to="#pricing">Start your plan</Link>
+        <Trans>Simplify Sales. Enhance Service.</Trans></u></p>
+        <Link className='btn' to="#pricing"><Trans>Start your plan</Trans></Link>
       </div>
       <div className='image-wrapper'>
       <StaticImage
