@@ -36,9 +36,6 @@
     flex-direction: column;
     gap: 50px;
   }
-  .image-wrapper {
-    margin: 0 -2.5em;
-  }
   .image-wrapper img {
     border-radius: 0;
   }
