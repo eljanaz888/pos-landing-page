@@ -6,6 +6,7 @@ import Review from '../components/review';
 import TawkToWidget from '../components/TawkToWidget';
 import { graphql } from "gatsby";
 
+
 export default function IndexPage() {
 
   return (
@@ -14,7 +15,7 @@ export default function IndexPage() {
       <Page useSplashScreenAnimation>
         <Hero/>
         <Pricing />
-        <ProjectsSection sectionId="features" heading="Built-in Features" />
+        <ProjectsSection sectionId="features" heading="Features" />
         <Review/>
         <TawkToWidget tawkId="644403d74247f20fefed28f8/1gukqu0l3" /> 
       </Page>

@@ -30,7 +30,7 @@
         "url": "/login"
       },
       "footer": [
-        { "label": "Home", "url": "/home" },
+        { "label": "Home", "url": "/" },
         { "label": "Terms", "url": "/terms" },
         { "label": "About", "url": "/about" },
         { "label": "FAQ", "url": "/faq" }

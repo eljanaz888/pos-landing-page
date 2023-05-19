@@ -13,6 +13,10 @@
     flex-wrap: wrap;
 }
 
+#card3 .btn {
+    margin-top: 14px;
+}
+
 .pricing-card {
     border: 1px solid black;
     padding: 20px;
@@ -24,6 +28,7 @@
     transition: transform 0.5s ease;
     width: 280px;
     height: auto;
+    max-height: 420px;
 }
 
 .pricing-card h3 {
@@ -75,7 +80,7 @@
 }
 @media (max-width: 425px) {
     .pricing h1 {
-        margin-bottom: 20px;
+        margin-bottom: 40px;
         margin-top: 0;
     }
 

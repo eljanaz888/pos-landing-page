@@ -2,19 +2,15 @@
   "projects": [
     {
       "visible": true,
-      "category": "🧰 Easy Product Management",
+      "category": "Easy Product Management",
       "title": "Pos.al simplifies the management of products",
       "description": "With Pos.al businesses can swiftly navigate through their catalog, search for items, and apply filters to quickly find specific products, ensuring a smooth and efficient sales process.",
       "tags": ["Intuitive catalog", "Efficient inventory"],
       "image": {
-        "src": "../../images/features-tablet.jpg",
-        "linkTo": ""
+        "src": "../../images/laptop-cover.jpg",
+        "linkTo": "https://posal.tawk.help/"
       },
       "links": [
-        {
-          "type": "github",
-          "url": "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme"
-        },
         {
           "type": "external",
           "url": "https://www.gatsbyjs.org/docs/mdx/writing-pages/"
@@ -23,40 +19,32 @@
     },
     {
       "visible": true,
-      "category": "🧰 Flexible Payment Options",
+      "category": "Flexible Payment Options",
       "title": "Pos.al offers flexible payment options",
       "description": "With Pos.al you can generate customizable receipts and invoices, providing businesses with a professional and organized approach to financial transactions.",
       "tags": ["Multiple payment methods", "Secure transactions"],
       "image": {
         "src": "../../images/features-mobile.jpg",
-        "alt": "Extendable Layout"
+        "linkTo": "https://posal.tawk.help/"
       },
       "links": [
         {
-          "type": "github",
-          "url": "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme"
-        },
-        {
           "type": "external",
-          "url": "https://www.gatsbyjs.org/docs/mdx/writing-pages/"
+          "url": "https://posal.tawk.help/"
         }
       ]
     },
     {
       "visible": true,
-      "category": "🧰 Customer Support and Helpdesk",
+      "category": "Customer Support and Helpdesk",
       "title": "Pos.al offers integrated customer support and helpdesk features",
       "description": "The platform includes ticketing systems, live chat support, and a knowledge base to address common questions or concerns. With a dedicated customer support and helpdesk feature, you can improve customer satisfaction, build trust, and maintain strong relationships.",
       "tags": ["Customer support", "Helpdesk integration"],
       "image": {
-        "src": "../../images/charles-deluvio-DgoyKNgPiFQ-unsplash.jpg",
+        "src": "../../images/features-tablet.jpg",
         "linkTo": "https://posal.tawk.help/"
       },
       "links": [
-        {
-          "type": "github",
-          "url": "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme"
-        },
         {
           "type": "external",
           "url": "https://posal.tawk.help/"
@@ -65,8 +53,8 @@
     }
   ],
   "button": {
-    "visible": true,
+    "visible": false,
     "label": "Follow us",
-    "url": "https://github.com/konstantinmuenster/gatsby-theme-portfolio-minimal"
+    "url": "https://posal.tawk.help/"
   }
 }

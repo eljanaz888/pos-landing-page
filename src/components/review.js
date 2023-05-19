@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import { Animation } from 'gatsby-theme-portfolio-minimal';
 import '../components/review.css';
+import { Trans } from "gatsby-plugin-react-i18next";
 
 
 const Review = () => {
@@ -33,14 +34,14 @@ const Review = () => {
 
   return(
     <section className="review" id="reviews">
-        <h1>What our people say</h1>
+        <h1><Trans>What our people say</Trans></h1>
     <div className="reviews-wrapper">
       {sortedNodes.map((item, index) => {
         return (
           <div className="review-wrapper" key={index}>
             <div className="review-card" id={item.frontmatter.id}>
               <span className='star'>{item.frontmatter.stars}</span>
-              <p className='opinion'>{item.frontmatter.description}</p>
+              <p className='opinion'><Trans>{item.frontmatter.description}</Trans></p>
               <div className='opinion-wrapper'>
                 <StaticImage className='review-photo'
                             src='../images/review-photo.jpg'
