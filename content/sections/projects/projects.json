@@ -7,7 +7,7 @@
       "description": "With Pos.al businesses can swiftly navigate through their catalog, search for items, and apply filters to quickly find specific products, ensuring a smooth and efficient sales process.",
       "tags": ["Intuitive catalog", "Efficient inventory"],
       "image": {
-        "src": "../../images/laptop-hand.png",
+        "src": "../../images/laptop-hand.jpg",
         "linkTo": "https://posal.tawk.help/"
       },
       "links": [
@@ -24,7 +24,7 @@
       "description": "With Pos.al you can generate customizable receipts and invoices, providing businesses with a professional and organized approach to financial transactions.",
       "tags": ["Multiple payment methods", "Secure transactions"],
       "image": {
-        "src": "../../images/mobile-hand.png",
+        "src": "../../images/mobile-hand.jpg",
         "linkTo": "https://posal.tawk.help/"
       },
       "links": [
