@@ -22,17 +22,12 @@
       "header": [
         { "label": "Pricing", "url": "/#pricing" },
         { "label": "Features", "url": "/#features" },
-        {
-          "label": "Support",
-          "openNewTab": true,
-          "url": "https://posal.tawk.help/"
-          
-        }
+        { "label": "Support", "url": "https://posal.tawk.help/" }
       ],
       "ctaButton": {
-        "openNewTab": true,
+        "openNewTab": false,
         "label": "Login",
-        "url": "/login"
+        "url": "https://pos.al/login"
       },
       "footer": [
         { "label": "Home", "url": "/" },
