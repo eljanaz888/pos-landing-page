@@ -22,7 +22,12 @@
       "header": [
         { "label": "Pricing", "url": "/#pricing" },
         { "label": "Features", "url": "/#features" },
-        { "label": "Reviews", "url": "/#reviews" }
+        {
+          "label": "Support",
+          "openNewTab": true,
+          "url": "https://posal.tawk.help/"
+          
+        }
       ],
       "ctaButton": {
         "openNewTab": true,
