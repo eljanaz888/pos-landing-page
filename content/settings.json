@@ -20,12 +20,12 @@
     "logo": { "text": "Pos." },
     "navigation": {
       "header": [
-        { "label": "Pricing", "url": "/#pricing" },
-        { "label": "Features", "url": "/#features" },
+        { "label": "Pricing", "url": "#pricing" },
+        { "label": "Features", "url": "#features" },
         { "label": "Support", "url": "https://posal.tawk.help/" }
       ],
       "ctaButton": {
-        "openNewTab": false,
+        "openNewTab": true,
         "label": "Login",
         "url": "https://pos.al/login"
       },
