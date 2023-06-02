@@ -56,8 +56,3 @@
         margin-right: 4rem;
     }
 }
-@media (max-width: 425px){
-    .ContentWrapper {
-        margin-left: 30px;
-    }
-}
