@@ -19,12 +19,12 @@
 
 .first-wrapper u {
   text-decoration: none;
-  box-shadow: inset 0 -0.5em 0 var(--secondary-color);
+  box-shadow: inset 0 -0.5em 0 #ffbe0b;
   transition: box-shadow 0.3s ease-out 0s;
 }
 
 .first-wrapper u:hover {
-  box-shadow: inset 0 -1em 0 var(--secondary-color);
+  box-shadow: inset 0 -1em 0 #ffbe0b;
 }
 
 .image-wrapper {

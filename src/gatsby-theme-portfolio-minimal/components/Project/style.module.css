@@ -79,7 +79,7 @@
 
 .Project .ProjectImageWrapper:hover {
     transform: translate3d(0px, -0.125rem, 0px);
-    box-shadow: 0 0 2.5rem var(--box-shadow-hover-color);
+    box-shadow: 0 0 2.5rem #ffbe0b;
 }
 
 .Project .ProjectImage {
