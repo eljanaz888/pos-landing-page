@@ -1,0 +1,64 @@
+.contact-us {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .contact-us p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info {
+    margin-left: 10px;
+  }
+  
+  .contact-info p {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .contact-info p span {
+    font-weight: bold;
+  }
+
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .buttons a:hover {
+    box-shadow: 4px 4px 10px #1e1e1e;
+   transform: scale(1.1);
+  }
+  
+  .buttons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: #1e1e1e;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    transform: scale(1);
+    transition: transform 0.5s ease;
+    border-radius: 10px;
+  }
+  
+  .buttons .icon {
+    margin-right: 5px;
+    background-color: #fff;
+    width: 50px;
+    border-radius: 10px;
+  }
+  

@@ -36,7 +36,7 @@ const Pricing = () => {
           return (
             <div className="cards-wrapper" key={index}>
               <div className="pricing-card" id={item.frontmatter.id}>
-                <h3 className="header">{item.frontmatter.header}</h3>
+                <h3 className="header"><Trans>{item.frontmatter.header}</Trans></h3>
                 <h3 className="price">
                   <Trans>{item.frontmatter.pricing}</Trans>
                 </h3>

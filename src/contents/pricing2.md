@@ -1,10 +1,10 @@
 ---
 title: Different plans for different needs
 id: card2
-header: Basic
-pricing: $49/monthly
+header: Pos + Cash Fiscalization
+pricing:  200ALL/monthly
 whats-included: What’s included
-list: Access to basic plan
+list: Access to cash fiscalization
 ---
 
 [Get Started](http://www.google.com){: .btn}

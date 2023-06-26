@@ -5,6 +5,7 @@ import Hero from '../components/hero';
 import Review from '../components/review';
 import TawkToWidget from '../components/TawkToWidget';
 import { graphql } from "gatsby";
+import ContactUs from "../components/contact";
 
 
 export default function IndexPage() {
@@ -13,11 +14,12 @@ export default function IndexPage() {
     <>
       <Seo title="Pos." />
       <Page useSplashScreenAnimation>
-        <Hero/>
+        <Hero />
         <Pricing />
         <ProjectsSection sectionId="features" heading="Features" />
-        <Review/>
-        <TawkToWidget tawkId="644403d74247f20fefed28f8/1gukqu0l3" /> 
+        <Review />
+        <ContactUs />
+        <TawkToWidget tawkId="644403d74247f20fefed28f8/1gukqu0l3" />
       </Page>
     </>
   );
