@@ -61,4 +61,20 @@
     width: 50px;
     border-radius: 10px;
   }
+
+  @media (max-width: 600px){
+    .buttons {
+        justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+
+    .buttons a { 
+        display: flex;
+    flex-wrap: wrap;
+    width: 257px;
+    gap: 5px;
+    justify-content: flex-start;
+    }
+  }
   
