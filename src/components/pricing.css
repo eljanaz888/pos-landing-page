@@ -11,16 +11,34 @@
     align-items: center;
     gap: 50px;
     flex-wrap: wrap;
-}
+  }
+  
+  .cards-wrapper {
+    flex: 0 0 calc(33.33% - 20px); /* Adjust the width of each pricing card */
+    margin-right: 20px; /* Add right margin to create spacing between cards */
+    transition: transform 0.5s ease; /* Add transition for smooth sliding animation */
+  }
 
 #card3 .btn {
-    margin-top: 14px;
+    margin-top: 0;
 }
 #card4 .btn {
-    margin-top: 5px;
+    margin-top: 0;
+}
+#card4 .header{
+    margin-top: 27px;
 }
 #card1 .header {
     margin-top: 30px;
+}
+#card1 .btn-pricing {
+    margin-top: 0;
+}
+#card2 .header {
+    margin-top: 32px;
+}
+#card2 .btn-pricing {
+    margin-top: 10px;
 }
 
 .pricing-card {
@@ -34,7 +52,10 @@
     transition: transform 0.5s ease;
     width: 300px;
     height: auto;
-    max-height: 405px;
+    min-height: 405px;
+    display: flex;
+    flex-direction: column; 
+    cursor: pointer;
 }
 
 .pricing-card h3 {
@@ -48,8 +69,8 @@
 }
 
 .pricing-card:hover {
-   box-shadow: 4px 4px 10px #1e1e1e;
-   transform: scale(1.1);
+   box-shadow: 2px 2px 8px #1e1e1e;
+   transform: scale(1.03);
 }
 
 .pricing h1{
@@ -68,21 +89,27 @@
     border-radius: 100%;
     background-color: var(--background-color);
     --tw-bg-opacity: 1;
-    font-size: 22px;
-    line-height: 22px;
+    font-size: 18px;
     vertical-align: bottom;
 }
 .pricing-card p{
-    line-height: 18px;
-    font-size: 18px;
+    line-height: 16px;
+    font-size: 16px;
 }
 .pricing-card .included{
     font-weight: 700;
-    font-size: 22px;
+    font-size: 20px;
 }
 .pricing-card .btn{
     margin-bottom: 20px;
     cursor: pointer;
+}
+
+.btn-pricing {
+    width: max-content;
+    margin: 30px auto 0 auto;
+    padding: 0.5rem 1rem;
+    font-size: 20px
 }
 @media (max-width: 425px) {
     .pricing h1 {
@@ -113,4 +140,35 @@
          padding-bottom: 30px;
      }
 }
+@media (max-width: 768px) {
+    .pricing-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+      padding-bottom: 0;
+      margin-bottom: 0;
+      overflow-x: auto;
+      scroll-behavior: initial;
+      align-content: center;
+    }
+  
+    .cards-wrapper {
+      margin-right: 20px;
+      margin-bottom: 20px;
+    }
+  
+    .pricing-card {
+      transform: scale(1);
+      transition: none;
+      height: auto;
+      min-height: auto;
+      display: block;
+      box-shadow: none;
+      margin-bottom: 20px;
+      padding: 20px;
+    }
+  }
+  
+  
 

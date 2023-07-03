@@ -15,14 +15,14 @@
     "Access to our Pos platform and basic services" : "Akses në shërbimet bazike të platformës Pos.",
     "Access to cash fiscalization" : "Akses në fiskalizimin cash.",
     "Access to e-invoice fiscalization" : "Akses në fiskalizimin e-invoice.",
-    "Access to cash, non-cash, e-invoice services." : "Akses në shërbimet e fiskalizimit cash, jo-cash, e-invoice",
+    "Access to cash, non-cash, e-invoice services for every 1000 requests." : "Akses në shërbimet e fiskalizimit cash, jo-cash, e-invoice për çdo 1000 kërkesa",
     "Pos + Cash Fiscalization" : "Pos + Fiskalizimi Cash",
     "400ALL/monthly" : "400ALL/muaj",
     "200ALL/monthly" : "200ALL/muaj",
     "500ALL/monthly" : "500ALL/muaj",
     "Pos + E-Invoice Fiscalization" : "Pos + Fiskalizimi E-Invoice",
-    "Pos + Rest API Fiscalization" : "Pos + Fiskalizim Rest API",
-    "Get Started" : "Shiko planin",
+    "Rest API Fiscalization" : "Fiskalizim Rest API",
+    "Try Now..." : "Provo Pos...",
     "Great pos platform. Really enjoying my experience! I am so glad that I found this platform 😊" : "Platformë e shkëlqyer pos. Me të vërtetë më pëlqen përvoja! Jam shumë i lumtur që gjeta këtë platformë 😊",
     "I would recommend this platform to EVERYBODY. It's great!" : "Unë do t'ia rekomandoja këtë platformë TË GJITHËVE. Është e mrekullueshme!",
     "I am finding this experience wonderful. Very great platform!" : "Më duket e mrekullueshme kjo përvojë. Platformë shumë e shkëlqyer!",
@@ -33,7 +33,7 @@
     "Pos.al simplifies the management of products" : "Pos.al e bën menaxhimin e produkteve më të lehtë",
     "With Pos.al businesses can swiftly navigate through their catalog, search for items, and apply filters to quickly find specific products, ensuring a smooth and efficient sales process." : "Me Pos.al bizneset mund të navigojnë me shpejtësi nëpër katalogun e tyre, të kërkojnë artikuj dhe të aplikojnë filtra për të gjetur shpejt produkte specifike, duke siguruar një proces të qetë dhe efikas të shitjeve.",
     "Intuitive catalog" : "Katalog i thjeshtë",
-    "Efficient inventory" : "Inventor efikas",
+    "Efficient management" : "Menaxhim efikas",
     "Flexible Payment Options" : "Pagesa Fleksibël",
     "Pos.al offers flexible payment options" : "Pos. al ofron mënyra pagesash fleksibël",
     "With Pos.al you can generate customizable receipts and invoices, providing businesses with a professional and organized approach to financial transactions." : "Me Pos.al ju mund të gjeneroni fatura të personalizuara, duke u ofruar bizneseve një qasje profesionale dhe të organizuar ndaj transaksioneve financiare.",
@@ -66,6 +66,10 @@
     "Email us" : "Na shkruani në Email",
     "Visit our page" : "Vizitoni faqen tonë",
     "Get in Touch with us" : "Na kontaktoni",
-    "Contact" : "Kontakti"
+    "Contact" : "Kontakti",
+    "Reliable" : "I thjeshtë",
+    "Swift" : "I shpejtë",
+    "Secured" : "I sigurt",
+    "Get Started" :  "Filloni planin"
 
 }

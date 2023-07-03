@@ -19,7 +19,7 @@ export function Section(props: SectionProps): React.ReactElement {
     return (
         <section id={props.anchor} className={classes.Section}>
             <div className={classList}>
-                {props.heading && <h3 className={classes.Heading}><Trans>{props.heading}</Trans></h3>}
+                {props.heading && <h1 className={classes.Heading}><Trans>{props.heading}</Trans></h1>}
                 {props.children}
             </div>
         </section>

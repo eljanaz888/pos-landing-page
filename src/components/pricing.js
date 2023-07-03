@@ -49,7 +49,7 @@ const Pricing = () => {
                   </span>
                   <Trans>{item.frontmatter.list}</Trans>
                 </p>
-                <button className="btn" type="button">
+                <button className="btn btn-pricing" type="button">
                   <Trans>Get Started</Trans>
                 </button>
               </div>

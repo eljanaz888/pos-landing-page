@@ -1,10 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
-import { IconMail } from "gatsby-theme-portfolio-minimal/src/components/Icon/IconMail"
-import { IconYouTube } from "gatsby-theme-portfolio-minimal/src/components/Icon/IconYouTube"
-import { IconWeb } from "../gatsby-theme-portfolio-minimal/components/Icon/IconWeb"
 import "../components/contact.css"
 import { Trans } from "react-i18next"
+import { Youtube, EnvelopeAtFill } from "react-bootstrap-icons"
 
 const ContactUs = () => {
     return (
@@ -19,19 +17,14 @@ const ContactUs = () => {
             </div>
             <div className="buttons">
                 <Link to="https://www.youtube.com/channel/UCuR5SmYAHoXONCGUSwlqRSg" className="youtube" target="_blank">
-                    <span className="icon"><IconYouTube /></span>
+                    <span className="icon"><Youtube /></span>
                     <span className="text"><Trans>Follow us on YouTube</Trans></span>
                 </Link>
                 <a href="info@pos.al" className="email-button">
-                    <span className="icon"><IconMail /></span>
+                    <span className="icon"><EnvelopeAtFill /></span>
                     <span className="text"><Trans>Email us</Trans></span>
                 </a>
-                <Link to="https://pos.al" className="website" target="_blank">
-                    <span className="icon">
-                        <IconWeb />
-                    </span>
-                    <span className="text"><Trans>Visit our page</Trans></span>
-                </Link>
+
             </div>
         </div>
     )

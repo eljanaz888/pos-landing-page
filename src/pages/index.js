@@ -2,11 +2,9 @@ import React from "react";
 import { Page, ProjectsSection, Seo } from "gatsby-theme-portfolio-minimal";
 import Pricing from '../components/pricing'
 import Hero from '../components/hero';
-import Review from '../components/review';
 import TawkToWidget from '../components/TawkToWidget';
 import { graphql } from "gatsby";
 import ContactUs from "../components/contact";
-
 
 export default function IndexPage() {
 
@@ -17,7 +15,6 @@ export default function IndexPage() {
         <Hero />
         <Pricing />
         <ProjectsSection sectionId="features" heading="Features" />
-        <Review />
         <ContactUs />
         <TawkToWidget tawkId="644403d74247f20fefed28f8/1gukqu0l3" />
       </Page>

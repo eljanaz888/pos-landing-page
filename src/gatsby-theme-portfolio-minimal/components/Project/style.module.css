@@ -74,12 +74,13 @@
     height: 15rem;
     border-radius: var(--border-radius);
     box-shadow: 0 0 2.5rem var(--box-shadow-color);
-    transition: all 0.3s ease-out;
+    transform: scale(1);
+    transition: transform 0.5s ease;
 }
 
 .Project .ProjectImageWrapper:hover {
-    transform: translate3d(0px, -0.125rem, 0px);
-    box-shadow: 0 0 2.5rem #1e1e1e;
+    transform: scale(1.03);
+    box-shadow: 2px 2px 8PX #1e1e1e;
 }
 
 .Project .ProjectImage {

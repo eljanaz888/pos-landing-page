@@ -35,8 +35,8 @@
     gap: 10px;
   }
   .buttons a:hover {
-    box-shadow: 4px 4px 10px #1e1e1e;
-   transform: scale(1.1);
+    box-shadow: 2px 2px 8px #1e1e1e;
+   transform: scale(1.03);
   }
   
   .buttons a {
@@ -57,9 +57,14 @@
   
   .buttons .icon {
     margin-right: 5px;
-    background-color: #fff;
-    width: 50px;
-    border-radius: 10px;
+    background-color: #1e1e1e;
+    color: #fff;
+    width: 30px;
+    border-radius: 5px;
+    font-size: 22px;
+  }
+  .buttons .icon svg{
+    vertical-align: middle;
   }
 
   @media (max-width: 600px){
