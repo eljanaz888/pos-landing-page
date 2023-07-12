@@ -14,8 +14,8 @@
   }
   
   .cards-wrapper {
-    margin-right: 25px; /* Add right margin to create spacing between cards */
-    transition: transform 0.5s ease; /* Add transition for smooth sliding animation */
+    margin-right: 25px; 
+    transition: transform 0.5s ease; 
   }
 
 #card3 .btn {
