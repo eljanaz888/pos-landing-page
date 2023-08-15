@@ -49,9 +49,9 @@ const Pricing = () => {
                   </span>
                   <Trans>{item.frontmatter.list}</Trans>
                 </p>
-                <button className="btn btn-pricing" type="button">
+                <a className="btn btn-pricing" href="https://app.pos.al" target="_blank" rel="noopener noreferrer">
                   <Trans>Get Started</Trans>
-                </button>
+                </a>
               </div>
             </div>
           );

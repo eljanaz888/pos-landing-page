@@ -29,32 +29,32 @@ const Review = () => {
 
   // sort nodes by id
   const sortedNodes = data.allMarkdownRemark.nodes.sort((a, b) =>
-  a.frontmatter.id.localeCompare(b.frontmatter.id)
+    a.frontmatter.id.localeCompare(b.frontmatter.id)
   );
 
-  return(
+  return (
     <section className="review" id="reviews">
-        <h1><Trans>What our people say</Trans></h1>
-    <div className="reviews-wrapper">
-      {sortedNodes.map((item, index) => {
-        return (
-          <div className="review-wrapper" key={index}>
-            <div className="review-card" id={item.frontmatter.id}>
-              <span className='star'>{item.frontmatter.stars}</span>
-              <p className='opinion'><Trans>{item.frontmatter.description}</Trans></p>
-              <div className='opinion-wrapper'>
-                <StaticImage className='review-photo'
-                            src='../images/review-photo.jpg'
-                            alt='hello'/>
-                <h2>{item.frontmatter.name}</h2>
+      <h1><Trans>What our people say</Trans></h1>
+      <div className="reviews-wrapper">
+        {sortedNodes.map((item, index) => {
+          return (
+            <div className="review-wrapper" key={index}>
+              <div className="review-card" id={item.frontmatter.id}>
+                <span className='star'>{item.frontmatter.stars}</span>
+                <p className='opinion'><Trans>{item.frontmatter.description}</Trans></p>
+                <div className='opinion-wrapper'>
+                  <StaticImage className='review-photo'
+                    src='../images/review-photo.jpg'
+                    alt='hello' />
+                  <h2>{item.frontmatter.name}</h2>
+                </div>
               </div>
             </div>
-          </div>
-        );
-      })}
-    </div>
-    <Animation/>
-  </section>
-);
+          );
+        })}
+      </div>
+      <Animation />
+    </section>
+  );
 }
 export default Review

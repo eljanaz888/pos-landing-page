@@ -28,7 +28,7 @@
       "ctaButton": {
         "openNewTab": true,
         "label": "Login",
-        "url": "https://pos.al/login"
+        "url": "https://app.pos.al"
       },
       "footer": [
         { "label": "Home", "url": "/" },

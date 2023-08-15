@@ -11,7 +11,7 @@ const Hero = () => {
         <h1 id='the-header'>{t('Pos.al: Simplify Your Point of Sale')}</h1>
         <p><u>
           <Trans>Simplify Sales. Enhance Service.</Trans></u></p>
-        <Link className='btn' to="https://pos.al/signup" target='_blank'><Trans>Try Now...</Trans></Link>
+        <Link className='btn' to="https://app.pos.al" target='_blank'><Trans>Try Now...</Trans></Link>
       </div>
       <div className='image-wrapper'>
         <StaticImage

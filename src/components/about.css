@@ -1,0 +1,80 @@
+.about {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  
+  .about h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #666;
+  }
+  
+  .about-content ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .about-content ul li {
+    margin-bottom: 10px;
+  }
+  
+  .about-content h2 {
+    font-size: 1.8rem;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .about-content img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+  
+  /* Link Styles */
+  .about-content a {
+    color: #007bff;
+    text-decoration: underline;
+    transition: color 0.3s;
+  }
+  
+  .about-content a:hover {
+    color: #0056b3;
+  }
+  
+  /* Callout Box */
+  .callout-box {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .callout-box h3 {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .callout-box p {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
