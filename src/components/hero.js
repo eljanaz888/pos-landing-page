@@ -8,7 +8,7 @@ const Hero = () => {
   const { t } = useTranslation();
   return (
     <>
-      <Seo title="Pos.al"
+      <Seo title="Pos."
         description={<Trans>"Discover our innovative Point of Sale (POS) solutions designed to elevate your business."</Trans>} />
       <section className='hero-wrapper'>
         <div className='first-wrapper'>

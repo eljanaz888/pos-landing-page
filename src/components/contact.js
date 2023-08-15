@@ -8,7 +8,7 @@ import { Seo } from "gatsby-theme-portfolio-minimal"
 const ContactUs = () => {
     return (
         <>
-            <Seo title="Contact Us"
+            <Seo title="Pos."
                 description={<Trans>"Get in touch with us to learn more about our services and how we can help your business thrive."</Trans>} />
             <section className="contact-us" id="contact">
                 <h1><Trans>Get in Touch with us</Trans></h1>

@@ -31,7 +31,7 @@ const Pricing = () => {
 
   return (
     <>
-      <Seo title="Pricing"
+      <Seo title="Pos."
         description={<Trans>"Browse our flexible pricing plans and choose the perfect package for your business."</Trans>} />
       <section className="pricing" id="pricing">
         <h1><Trans>{sortedNodes[0].frontmatter.title}</Trans></h1>

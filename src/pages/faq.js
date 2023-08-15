@@ -19,7 +19,7 @@ const FAQ = ({ data }) => {
         }
     };
 
-    const { nodes: questions } = data.allMarkdownRemark;
+    const faqItems = data.allMarkdownRemark.edges;
 
     return (
         <>
@@ -29,8 +29,8 @@ const FAQ = ({ data }) => {
                 <section className="faq" id="faq">
                     <h1><Trans>Frequently Asked Questions</Trans></h1>
                     <div className="faq-wrapper">
-                        {questions.map((item) => {
-                            const { id, question, answer } = item.frontmatter;
+                        {faqItems.map((item) => {
+                            const { id, question, answer } = item.node.frontmatter;
                             return (
                                 <div
                                     className={`faq-item ${openQuestionId === id ? "open" : ""}`}
@@ -79,18 +79,16 @@ query languagesAndMyQuery($language: String!) {
       }
     }
     allMarkdownRemark(
-        filter: {
-          frontmatter: {
-            id: { ne: null }
-            question: { ne: null }
-          }
-        }
+        filter: {frontmatter: {question: {regex: ""}}}
+      sort: { frontmatter: {id: ASC}}
       ) {
-        nodes {
-          frontmatter {
-            id
-            question
-            answer
+        edges {
+          node {
+            frontmatter {
+              id
+              question
+              answer
+            }
           }
         }
       }
