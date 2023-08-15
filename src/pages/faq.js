@@ -9,20 +9,22 @@ import { Trans } from "gatsby-plugin-react-i18next";
 const FAQ = ({ data }) => {
     const [openQuestionId, setOpenQuestionId] = useState(null);
 
-    const handleQuestionClick = (id, event) => {
-        if (openQuestionId === id) {
-            setOpenQuestionId(null);
-        } else {
-            setOpenQuestionId(id);
+    const handleQuestionClick = (id) => {
+        setOpenQuestionId(prevOpenQuestionId => prevOpenQuestionId === id ? null : id);
+    };
+
+    const handleKeyPress = (id, event) => {
+        if (event.key === "Enter" || event.key === " ") {
+            handleQuestionClick(id);
         }
-        event.preventDefault();
     };
 
     const { nodes: questions } = data.allMarkdownRemark;
 
     return (
         <>
-            <Seo title="FAQ" />
+            <Seo title="FAQ"
+                description={<Trans>"Find answers to common questions about our products and services."</Trans>} />
             <Page useSplashScreenAnimation>
                 <section className="faq" id="faq">
                     <h1><Trans>Frequently Asked Questions</Trans></h1>
@@ -36,7 +38,10 @@ const FAQ = ({ data }) => {
                                 >
                                     <div
                                         className="faq-header"
-                                        onClick={(event) => handleQuestionClick(id, event)}
+                                        onClick={() => handleQuestionClick(id)}
+                                        onKeyPress={(event) => handleKeyPress(id, event)}
+                                        role="button"
+                                        tabIndex={0} // Add tabIndex to make it focusable
                                     >
                                         <h3><Trans>{question}</Trans></h3>
                                         {openQuestionId === id ? (
@@ -74,16 +79,21 @@ query languagesAndMyQuery($language: String!) {
       }
     }
     allMarkdownRemark(
-        filter: { frontmatter: { question: { ne: null }, answer: { ne: null } } }
-    ) {
-        nodes {
-            frontmatter {
-                id
-                question
-                answer
-            }
+        filter: {
+          frontmatter: {
+            id: { ne: null }
+            question: { ne: null }
+          }
         }
+      ) {
+        nodes {
+          frontmatter {
+            id
+            question
+            answer
+          }
+        }
+      }
     }
-}
 `;
 

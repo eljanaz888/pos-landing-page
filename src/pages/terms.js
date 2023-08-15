@@ -37,9 +37,10 @@ const Terms = ({ data }) => {
 
   return (
     <>
-      <Seo title="Terms" />
+      <Seo title="Terms"
+        description={<Trans>"Explore our terms and conditions for using our products and services."</Trans>} />
       <Page useSplashScreenAnimation>
-      <h1 className="terms-header"><Trans>Terms & Conditions</Trans></h1>
+        <h1 className="terms-header"><Trans>Terms & Conditions</Trans></h1>
         <section className="terms-wrapper">
           <Sidebar
             edges={edges}
@@ -81,12 +82,13 @@ export const query = graphql`
       }
     }
     allMarkdownRemark(
-      filter: {frontmatter: {paragraph: {regex: ""}}}
-      sort: { frontmatter: {id: ASC}}
+      filter: {id: { ne: null }
+      paragraph: { ne: null }}
     ) {
       edges {
         node {
           frontmatter {
+            id
             terms
             paragraph
           }

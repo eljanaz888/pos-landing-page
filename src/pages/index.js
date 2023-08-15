@@ -10,7 +10,8 @@ export default function IndexPage() {
 
   return (
     <>
-      <Seo title="Pos." />
+      <Seo title="Pos."
+        description="This is Pos.al" />
       <Page useSplashScreenAnimation>
         <Hero />
         <Pricing />

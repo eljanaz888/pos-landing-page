@@ -1,5 +1,5 @@
 ---
-id: terms10
+id: terms1-1
 terms: Contact Us
 paragraph: If you have any questions or comments about these Terms, please contact us.
 ---

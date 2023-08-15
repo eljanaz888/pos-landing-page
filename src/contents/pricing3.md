@@ -1,9 +1,9 @@
 ---
-title: Different plans for different needs
+title: Platform's plans and prices
 id: card3
-header: Pos + E-Invoice Fiscalization
+header: Pos + E-Invoice
 pricing: 200ALL/monthly
 whats-included: What’s included
-list: Access to e-invoice fiscalization
+list: Access to Pos, cash and e-invoice fiscalization.
 ---
 [Get Started](http://www.google.com){: .btn}

@@ -20,10 +20,10 @@
     "logo": { "text": "Pos." },
     "navigation": {
       "header": [
-        { "label": "Pricing", "url": "#pricing" },
-        { "label": "Features", "url": "#features" },
+        { "label": "Pricing", "url": "/#pricing" },
+        { "label": "Features", "url": "/#features" },
         { "label": "Support", "url": "https://posal.tawk.help/" },
-        { "label": "Contact", "url": "#contact" }
+        { "label": "Contact", "url": "/#contact" }
       ],
       "ctaButton": {
         "openNewTab": true,

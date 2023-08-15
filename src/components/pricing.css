@@ -18,27 +18,7 @@
     transition: transform 0.5s ease; 
   }
 
-#card3 .btn {
-    margin-top: 0;
-}
-#card4 .btn {
-    margin-top: 0;
-}
-#card4 .header{
-    margin-top: 27px;
-}
-#card1 .header {
-    margin-top: 30px;
-}
-#card1 .btn-pricing {
-    margin-top: 0;
-}
-#card2 .header {
-    margin-top: 32px;
-}
-#card2 .btn-pricing {
-    margin-top: 10px;
-}
+
 
 .pricing-card {
     border: 1px solid black;
@@ -63,7 +43,7 @@
 
 .pricing-card .header{
     border-bottom: 1px solid black;
-    margin-top: 10px;
+    margin-top: 30px;
     padding-bottom: 20px;
 }
 
@@ -106,7 +86,7 @@
 
 .btn-pricing {
     width: max-content;
-    margin: 30px auto 0 auto;
+    margin: auto;
     padding: 0.5rem 1rem;
     font-size: 20px
 }
