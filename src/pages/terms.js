@@ -71,29 +71,33 @@ const Terms = ({ data }) => {
 export default Terms;
 
 export const query = graphql`
-  query languagesAndMyQuery($language: String!) {
-    locales: allLocale(filter: { language: { eq: $language } }) {
-      edges {
-        node {
-          ns
-          data
-          language
-        }
+query languagesAndMyQuery($language: String!) {
+  locales: allLocale(filter: { language: { eq: $language } }) {
+    edges {
+      node {
+        ns
+        data
+        language
       }
     }
-    allMarkdownRemark(
-      filter: {id: { ne: null }
-      paragraph: { ne: null }}
-    ) {
-      edges {
-        node {
-          frontmatter {
-            id
-            terms
-            paragraph
-          }
+  }
+  allMarkdownRemark(
+    filter: {
+      frontmatter: {
+        id: { ne: null }
+        paragraph: { ne: null }
+      }
+    }
+  ) {
+    edges {
+      node {
+        frontmatter {
+          id
+          terms
+          paragraph
         }
       }
     }
   }
+}
 `;
