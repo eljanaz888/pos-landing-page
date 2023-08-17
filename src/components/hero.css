@@ -11,13 +11,6 @@
   align-items: center;
   text-align: center;
 }
-.hero-wrapper p {
-  font-size: 30px;
-  line-height: 36px;
-}
-#the-header{
-  font-size: 40px;
-}
 
 .first-wrapper {
   flex-basis: 50%;
