@@ -1,5 +1,5 @@
 ---
 id: terms10
-terms:  Modifications
-paragraph: We reserve the right to make changes or revisions to these Terms at any time without prior notice. Your continued use of the Site following any changes to these Terms constitutes your acceptance of the new Terms.
+terms: Limitation of liability
+paragraph: Our company is not responsible for any damages resulting from the incorrect use or inability to use our site or our services. This includes but is not limited to direct, indirect, incidental, punitive and consequential damages. We take no responsibility for any loss or damage that may be caused by unauthorized access using our servers or disrupting our services.
 ---

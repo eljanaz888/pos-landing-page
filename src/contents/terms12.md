@@ -1,5 +1,5 @@
 ---
 id: terms12
-terms:  Contact Us
-paragraph: If you have any questions or comments about these Terms, please contact us at +355672014274 or send an email to info@pos.al.
+terms:  Governing law
+paragraph: These Terms will be subject to and interpreted in accordance with the laws of the Republic of Albania, without affecting the principles of conflict of law.
 ---

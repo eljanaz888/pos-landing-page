@@ -1,6 +1,6 @@
 ---
 id: terms04
-terms: Privacy Policy
+terms: Privacy policy
 paragraph:
   Pos.al reserves the right to process personal data in order to improve the management of the relationship with its customers and promote the services offered on the site, without sharing them with third parties, without their approval. Pos.al collects the following data from the user Name, Surname, NUIS, Address, City, Phone number, E-mail address.<!--- DIVIDER --->The purposes for which we process customer data are as follows--<!--- DIVIDER --->1. Sending information about purchased subscriptions and general notifications via email or phone call.<!--- DIVIDER --->2. Sending personalized notifications on actions taken on the site.<!--- DIVIDER --->In cases like-<!--- DIVIDER --->- Uploading the fiscalization certificate in order to fiscalize your invoices, the data is not shared with third parties without the customer's approval.<!--- DIVIDER --->- Subscription payments on the platform, sensitive data of the used bank account, debit and credit cards are not collected and shared with third parties.<!--- DIVIDER --->
 ---
