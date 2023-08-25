@@ -1,5 +1,5 @@
 ---
 id: terms05
-terms: User Conduct
-paragraph: You agree to use our website in a manner that is legal, ethical, and respectful of the rights of others. You may not use our website to harass, threaten, or intimidate others, to engage in any activity that is fraudulent, deceptive or harmful, or to transmit any viruses or other harmful code.
+terms: User Responsibility for Account Credentials
+paragraph: You acknowledge and agree that you are solely responsible for maintaining the confidentiality and security of your username, email, and password associated with your account. Any activities performed under your account will be considered your responsibility.
 ---

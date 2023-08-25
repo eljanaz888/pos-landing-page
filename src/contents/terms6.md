@@ -1,5 +1,5 @@
 ---
 id: terms06
-terms: Limitation of Liability
-paragraph: Our company is not liable for any damages resulting from the use or inability to use our website or services, including but not limited to direct, indirect, incidental, punitive, and consequential damages. We are not responsible for any loss or damage that may result from any unauthorized access to or use of our servers or any interruption of our services.
+terms: User Conduct
+paragraph: You agree to use our site in a manner that is legal, ethical and respectful of the rights of others. You may not use our website to harass, threaten or intimidate others, to engage in any activity that is fraudulent, illegal or harmful, or to transmit any virus or other harmful code.
 ---

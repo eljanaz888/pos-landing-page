@@ -1,5 +1,5 @@
 ---
 id: terms10
-terms: Contact Us
-paragraph: If you have any questions or comments about these Terms, please contact us.
+terms:  Modifications
+paragraph: We reserve the right to make changes or revisions to these Terms at any time without prior notice. Your continued use of the Site following any changes to these Terms constitutes your acceptance of the new Terms.
 ---

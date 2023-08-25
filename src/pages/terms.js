@@ -8,7 +8,7 @@ import "../styles/terms.css";
 const Sidebar = ({ edges }) => {
   return (
     <nav className="sidebar-links">
-      <h3 className="sidebar-heading">Contents</h3>
+      <h3 className="sidebar-heading"><Trans>Contents</Trans></h3>
       <Scrollspy
         items={edges.map((edge) =>
           edge.node.frontmatter.terms.replace(/\s+/g, "-")
@@ -19,9 +19,7 @@ const Sidebar = ({ edges }) => {
           const { frontmatter } = edge.node;
           return (
             <li key={index}>
-              <a
-                href={`#${frontmatter.terms.replace(/\s+/g, "-")}`}
-              >
+              <a href={`#${frontmatter.terms.replace(/\s+/g, "-")}`}>
                 <Trans>{frontmatter.terms}</Trans>
               </a>
             </li>
@@ -37,28 +35,36 @@ const Terms = ({ data }) => {
 
   return (
     <>
-      <Seo title="Terms"
-        description={<Trans>"Explore our terms and conditions for using our products and services."</Trans>} />
+      <Seo
+        title="Terms"
+        description={
+          <Trans>
+            "Explore our terms and conditions for using our products and services."
+          </Trans>
+        }
+      />
       <Page useSplashScreenAnimation>
-        <h1 className="terms-header"><Trans>Terms & Conditions</Trans></h1>
+        <h1 className="terms-header">
+          <Trans>Terms & Conditions</Trans>
+        </h1>
         <section className="terms-wrapper">
-          <Sidebar
-            edges={edges}
-          />
+          <Sidebar edges={edges} />
           <div className="terms-list">
             {edges.map((edge) => {
               const { frontmatter } = edge.node;
+              const paragraphs = frontmatter.paragraph.split('<!--- DIVIDER --->');
+
               return (
-                <>
-                  <section id={frontmatter.terms.replace(/\s+/g, "-")}>
-                    <h2>
-                      <Trans>{frontmatter.terms}</Trans>
-                    </h2>
-                    <p>
-                      <Trans>{frontmatter.paragraph}</Trans>
+                <section id={frontmatter.terms.replace(/\s+/g, "-")} key={frontmatter.id}>
+                  <h2>
+                    <Trans>{frontmatter.terms}</Trans>
+                  </h2>
+                  {paragraphs.map((paragraph, index) => (
+                    <p key={index}>
+                      <Trans>{paragraph.trim()}</Trans>
                     </p>
-                  </section>
-                </>
+                  ))}
+                </section>
               );
             })}
           </div>
@@ -82,8 +88,8 @@ export const query = graphql`
       }
     }
     allMarkdownRemark(
-      filter: {frontmatter: {paragraph: {regex: ""}}}
-      sort: { frontmatter: {id: ASC}}
+      filter: { frontmatter: { paragraph: { regex: "" } } }
+      sort: { frontmatter: { id: ASC } }
     ) {
       edges {
         node {
