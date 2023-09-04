@@ -4,7 +4,5 @@ welcome: Welcome to Pos.al! We are a leading technology company specializing in 
 mission: Our mission is to revolutionize the way businesses manage their sales processes. We combine advanced technology with user-friendly interfaces to create this powerful POS platform that empower businesses to thrive in today's competitive market.
 services:
   - Versatile packages
-  - Inventory Management Solutions
-  - Payment Processing Integration
   - Customer Support and Helpdesk Services
 ---

@@ -20,7 +20,7 @@ module.exports = {
       //   // get this from the tawk script widget
       // },
     },
-    
+
 
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
@@ -39,6 +39,7 @@ module.exports = {
           backgroundColor: "#FFFFFF", // Used in manifest.json
           themeColor: "#000000", // Used in manifest.json
           display: "minimal-ui", // Used in manifest.json
+          icon: "./content/images/favicon.png" // Path is relative to the root
         },
         contentDirectory: "./content",
         blogSettings: {
