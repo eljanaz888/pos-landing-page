@@ -12,24 +12,4 @@ exports.onCreatePage = async ({ page, actions }) => {
         deletePage(oldPage);
         createPage(page);
     }
-
-    // Check if the page is a dynamic route for the default language (e.g., /some-page)
-    if (page.path.match(/^\/[^/]+$/)) {
-        const oldPage = { ...page };
-
-        // Add a trailing slash to the path
-        page.path = `${page.path}/`;
-
-        // Recreate the modified page
-        deletePage(oldPage);
-        createPage(page);
-    }
-
-    // Check if the page is a dynamic route for the /en version (e.g., /en/some-page)
-    if (page.path.match(/^\/en\/[^/]+$/)) {
-        // You may choose to handle this differently based on your requirements
-        // For example, you can create separate pages for /en/some-page/ if needed
-    }
-
 };
-
