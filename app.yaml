@@ -20,18 +20,6 @@ handlers:
     static_files: public/\1/index.html
     upload: public/.*/index.html
 
-  - url: /404
-    static_files: public/404/index.html
-    upload: public/404/index.html
-
-  - url: /(.+)
-    static_files: public/404/index.html
-    upload: public/404/index.html  
-
-  - url: /.*
-    static_files: public/404/index.html
-    upload: public/404/index.html  
-
 error_handlers:
   - error_code: default
     file: public/404/index.html
